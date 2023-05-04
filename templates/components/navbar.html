@@ -1,0 +1,80 @@
+{% load static %}
+
+<div>
+    <!-- Mobile -->
+    <div id="mobile-nav-overlay" class="md:hidden invisible overlay top-0 left-0 right-0 bottom-0 fixed z-[510] bg-[rgba(0,0,0,0.5)] transition-all duration-700"></div>
+    
+    <nav
+        class='block md:hidden fixed top-0 right-0 w-full z-[1000] transition-all duration-200 ease-in-out bg-white'>
+        <div class='relative w-full h-[69px] py-[20px] px-[16px] flex justify-between items-center bg-transparent'>
+            <a href="#">
+                Logo
+                <!-- <img height="48.39" width="128" src="{% static 'assets/logo.png' %}" alt="" /> -->
+            </a>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger cursor-pointer" onclick="toggleNavbar()">
+                <span class="line nav-active-a"></span>
+                <span class="line disappear"></span>
+                <span class="line nav-active-b"></span>
+            </div>
+
+        </div>
+        
+        <div class=' bg-white'>
+            <div id="mobile-navbar" class="flex flex-col  overflow-hidden transition-all duration-700 max-h-0">
+                <div class='px-[16px] py-[25px]'>
+                    <ul class='flex flex-col space-y-7 text-center'>
+                        <li><a class='text-black hover:text-yellow-300 text-[16px] font-[500]' href="/">Home</a></li>
+                        <li><a class='text-black hover:text-yellow-300 text-[16px] font-[500]' href="/about">About</a></li>
+                        <li><a class='text-black hover:text-yellow-300 text-[16px] font-[500]' href="/services">Services</a></li>
+                        <li><a class='text-black hover:text-yellow-300 text-[16px] font-[500]' href="/faqs">FAQs</a></li>
+                        <li><a class='text-black hover:text-yellow-300 text-[16px] font-[500]' href="/contact">Contact</a></li>
+                    </ul>
+
+                    <a class='text-[16px]  w-full h-[45px] mt-5 flex justify-center items-center bg-transparent text-black border border-black hover:bg-black hover:text-white duration-300 transition-all'
+                        href="/login">Get Started</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Desktop -->
+    <nav
+        id="desktopNav"
+        class="hidden md:block py-[20px] px-[16px] fixed w-full z-[500] top-0 right-0  transition-all duration-300 ease-in-out bg-transparent">
+        <div class='container mx-auto md:flex items-center justify-between relative'>
+            <a href="/">
+                Logo
+                <!-- <img height="48.39" width="128" src="{% static 'assets/logo.png' %}" alt="" /> -->
+            </a>
+            <!-- Hamburger -->
+
+            <ul class='flex  flex-col md:flex-row md:items-center md:space-x-5'>
+                <li><a class='text-black hover:text-yellow-300 text-[16px] font-[500] transition-all duration-300 ease-in-out'
+                        href="/">Home</a></li>
+                <li><a class='text-black hover:text-yellow-300 text-[16px] font-[500] transition-all duration-300 ease-in-out'
+                        href="/about">About</a></li>
+                <li><a class='text-black hover:text-yellow-300 text-[16px] font-[500] transition-all duration-300 ease-in-out'
+                        href="/services">Services</a></li>
+                <li><a class='text-black hover:text-yellow-300 text-[16px] font-[500] transition-all duration-300 ease-in-out'
+                    href="/faqs">FAQs</a></li>
+                <li><a class='text-black hover:text-yellow-300 text-[16px] font-[500] transition-all duration-300 ease-in-out'
+                        href="/contact">Contact</a></li>
+                
+            </ul>
+
+            
+            <a class='text-[16px]  w-[135px] h-[45px] flex justify-center items-center bg-transparent text-black border border-black hover:bg-black hover:text-white duration-300 transition-all'
+                href="/login">Get Started</a>
+        </div>
+    </nav>
+</div>
+
+
+
+
+<script>
+
+</script>

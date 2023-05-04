@@ -1,0 +1,38 @@
+{% extends "_base.html" %}
+{% load static %}
+
+
+{% block title %}
+<title>Crypto | FAQs</title>
+{% endblock title %}
+
+{% block content %}
+
+{% include 'components/navbar.html' %}
+
+<!-- Here -->
+<section class="py-[10rem] px-[1rem] w-full flex flex-col justify-center items-center overflow-hidden relative bg-[#F0E9E1]">
+    <div class="text-center lg:text-left container mx-auto">
+        <div class="text-center">
+            <h2 class="font-bold text-[2rem] md:text-[5rem]">FAQs</h2>
+            <div class="flex text-center text-[16px] md:text-[18px] justify-center gap-3  text-[#6c757d]">
+                <a class="" href="/">Home</a>
+                <span class="text-[#6c757d]"> / </span>
+                <p class="font-[600] text-[#13111A]">faqs</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shapes -->
+    <div class="">
+        <img class="hidden md:block w-[140px] absolute top-40 left-5 animate-bounce animate-duration animate-delay-first" src="{% static 'assets/design-shape1.png' %}" alt="">
+        <img class="hidden md:block w-[150px] absolute bottom-20 right-5 animate-bounce animate-duration animate-delay-second" src="{% static 'assets/design-shape2.png' %}" alt="">
+    </div>
+</section>
+
+
+{% include 'components/footer.html' %}
+
+
+
+{% endblock content %}

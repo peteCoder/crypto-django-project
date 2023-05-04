@@ -1,0 +1,92 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}
+<title>Crypto | Contact</title>
+{% endblock title %}
+
+{% block content %}
+
+{% include 'components/navbar.html' %}
+
+<!-- Page Content Starts Here -->
+
+<section class="py-[10rem] px-[1rem] w-full flex flex-col justify-center items-center overflow-hidden relative bg-[#F0E9E1]">
+    <div class="text-center lg:text-left container mx-auto">
+        <div class="text-center">
+            <h2 class="font-bold text-[2rem] md:text-[5rem]">Get in touch</h2>
+            <div class="flex text-center text-[16px] md:text-[18px] justify-center gap-3  text-[#6c757d]">
+                <a class="" href="/">Home</a>
+                <span class="text-[#6c757d]"> / </span>
+                <p class="font-[600] text-[#13111A]">Get in touch</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shapes -->
+    <div class="">
+        <img class="hidden md:block w-[140px] absolute top-40 left-5 animate-bounce animate-duration animate-delay-first" src="{% static 'assets/design-shape1.png' %}" alt="">
+        <img class="hidden md:block w-[150px] absolute bottom-20 right-5 animate-bounce animate-duration animate-delay-second" src="{% static 'assets/design-shape2.png' %}" alt="">
+    </div>
+</section>
+
+
+
+<!-- Modern Features -->
+<section class="pt-[75px] pb-[80px] px-[1rem] w-full min-h-[20vh] bg-[#FFFDF5] overflow-hidden">
+    <div class="container mx-auto">
+        <!-- Heading Text -->
+        <div class="text-center lg:text-left">
+            <h2 class="text-[#13111A] text-center font-bold text-[36px] md:text-[30px] lg:text-[44px] mb-20">Want communicate directly?</h2>
+            
+        </div>
+        <!-- Features Items -->
+        <div class="flex flex-wrap justify-center gap-2">
+
+            <div
+                class="flex flex-col items-center gap-4 md:gap-0 border-[rgba(19,17,26,.1)] border rounded-[10px] lg:w-[30%] md:w-[42%] md:p-[29px] text-center p-[28px] lg:p-[30px] transition-all duration-[.4s] mb-0 hover:bg-[#FFFDF5]">
+                <img  src="{% static 'assets/icons5.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[20px] md:text-[24px] my-[11px] font-[500] text-[rgba(19,17,26,1)]">Careers</h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        Want to join our team, reach and be a part of our ever growing and innonating team.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-center gap-4 md:gap-0 border-[rgba(19,17,26,.1)] border rounded-[10px] lg:w-[30%] md:w-[42%] md:p-[29px] text-center p-[28px] lg:p-[30px] transition-all duration-[.4s] mb-0 hover:bg-[#FFFDF5]">
+                <img  src="{% static 'assets/icons6.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[20px] md:text-[24px] my-[11px] font-[500] text-[rgba(19,17,26,1)]">Help & Support</h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        Our highly trained customer representatives are always avaliable to with help & support.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-center gap-4 md:gap-0 border-[rgba(19,17,26,.1)] border rounded-[10px] lg:w-[30%] md:w-[42%] md:p-[29px] text-center p-[28px] lg:p-[30px] transition-all duration-[.4s] mb-0 hover:bg-[#FFFDF5]">
+                <img  src="{% static 'assets/icons7.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[20px] md:text-[24px] my-[11px] font-[500] text-[rgba(19,17,26,1)]">Ask Question</h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        Got questions? Feel free to reach us on any of our contact platforms and well get back to you.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Page Content Ends Here -->
+
+
+{% include 'components/footer.html' %}
+
+
+
+{% endblock content %}

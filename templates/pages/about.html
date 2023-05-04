@@ -1,0 +1,338 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}
+<title>Crypto | About</title>
+{% endblock title %}
+
+
+{% block content %}
+
+{% include 'components/navbar.html' %}
+
+<!-- Here -->
+
+
+<section class="py-[10rem] px-[1rem] w-full flex flex-col justify-center items-center overflow-hidden relative bg-[#F0E9E1]">
+    <div class="text-center lg:text-left container mx-auto">
+        <div class="text-center">
+            <h2 class="font-bold text-[2rem] md:text-[5rem]">About</h2>
+            <div class="flex text-center text-[16px] md:text-[18px] justify-center gap-3  text-[#6c757d]">
+                <a class="" href="/">Home</a>
+                <span class="text-[#6c757d]"> / </span>
+                <p class="font-[600] text-[#13111A]">about</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shapes -->
+    <div class="">
+        <img class="hidden md:block w-[140px] absolute top-40 left-5 animate-bounce animate-duration animate-delay-first" src="{% static 'assets/design-shape1.png' %}" alt="">
+        <img class="hidden md:block w-[150px] absolute bottom-20 right-5 animate-bounce animate-duration animate-delay-second" src="{% static 'assets/design-shape2.png' %}" alt="">
+    </div>
+</section>
+
+
+<section class="py-[5rem] px-[1rem] w-full flex flex-col justify-center items-center overflow-hidden relative bg-white">
+    <!-- about-thumb2.png -->
+    <div class="lg:text-left container mx-auto">
+        <div class="flex flex-col md:flex-row  gap-16 items-center">
+
+            <div class="relative rounded-2xl space-y-2 lg:space-y-2 w-full md:w-1/2">
+                <img class="lg;rounded-l-3xl overflow-hidden md:w-full md:h-full md:object-cover" class="" src="{% static 'assets/about-thumb1.png' %}" alt="">
+                <img class="lg:rounded-2xl lg:rotate-[8deg] lg:absolute lg:right-0 lg:-bottom-0 " src="{% static 'assets/about-thumb2.png' %}" alt="">
+            </div>
+
+            
+            <div class="relative w-full lg:w-[50%]">
+                <h1
+                    class="text-[#13111A] font-bold leading-[2.35rem] md:leading-[3.7rem] lg:leading-[4.2rem] text-[36px] md:text-[30px] lg:text-[44px] md:mx-auto lg:mr-auto lg:ml-0 mb-6">
+                    Who we Are!
+                </h1>
+                <p
+                    class="text-[18px] md:text-[19px] mt-4 font-light max-w-[33rem] md:max-w-[35rem] md:mx-auto lg:mr-auto lg:ml-0 mb-4 opacity-60">
+                    ElitecryptoFX is an award-winning bitcoin exchange & Investment broker, providing trading services and facilities to both retail and institutional clients. ElitecryptoFX has positioned itself as the forex broker of choice for traders worldwide.
+                </p>
+                <p
+                    class="text-[18px] md:text-[19px] mt-4 font-light max-w-[33rem] md:max-w-[35rem] md:mx-auto lg:mr-auto lg:ml-0 mb-4 opacity-60">
+                    We have a history that dates back to 2009 when bitcoin was created, We laid the groundwork for the world’s first bitcoin trading service. Since then, we have grown from strength to strength, gaining the trust of traders around the world.
+                </p>
+            </div>
+            
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Modern Features -->
+<section class="pt-[75px] pb-[80px] px-[1rem] w-full min-h-[20vh] bg-[#f0e9e1] overflow-hidden">
+    <div class="container mx-auto">
+        <!-- Heading Text -->
+        <div class="text-center lg:text-left">
+            <h2 class="text-[#13111A] text-center font-bold text-[36px] md:text-[30px] lg:text-[44px] mb-20">Modern features</h2>
+            
+        </div>
+        <!-- Features Items -->
+        <div class="flex flex-wrap justify-center gap-2">
+
+            <div
+                class="flex flex-col items-center gap-4 md:gap-0 border-[rgba(19,17,26,.1)] border rounded-[10px] lg:w-[30%] md:w-[42%] md:p-[29px] text-center p-[28px] lg:p-[30px] transition-all duration-[.4s] mb-0 hover:bg-[#FFFDF5]">
+                <img class="md:shrink-0 md:mr-0 w-[45px] h-[45px]" src="{% static 'assets/big_icon1.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[20px] md:text-[24px] my-[15px] font-[600] text-[rgba(19,17,26,1)]">Safe and secure</h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        256 bit symmetric world class key encryption for both wallet & tranactions.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-center gap-4 md:gap-0 border-[rgba(19,17,26,.1)] border rounded-[10px] lg:w-[30%] md:w-[42%] md:p-[29px] text-center p-[28px] lg:p-[30px] transition-all duration-[.4s] mb-0 hover:bg-[#FFFDF5]">
+                <img class="md:shrink-0 md:mr-0 w-[45px] h-[45px]" src="{% static 'assets/big_icon2.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[20px] md:text-[24px] my-[15px] font-[600] text-[rgba(19,17,26,1)]">Complete transparency</h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        Easy trading, join millions gaining high profitability ratios daily from crypto trading & investing
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-center gap-4 md:gap-0 border-[rgba(19,17,26,.1)] border rounded-[10px] lg:w-[30%] md:w-[42%] md:p-[29px] text-center p-[28px] lg:p-[30px] transition-all duration-[.4s] mb-0 hover:bg-[#FFFDF5]">
+                <img class="md:shrink-0 md:mr-0 w-[45px] h-[45px]" src="{% static 'assets/big_icon3.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[20px] md:text-[24px] my-[15px] font-[600] text-[rgba(19,17,26,1)]">Creative team</h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        Get 24/7 on demand support from our friendly & Experienced customer success representatives.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="pt-[20px] md:pt-[40px] pb-[80px] px-[1rem] w-full min-h-[20vh] overflow-hidden bg-[#ffffff]">
+    <div class="container mx-auto">
+
+        <div class="w-full">
+
+            <div class="flex flex-col md:flex-row gap-5 items-center lg:items-start my-9">
+                <!-- Heading Text -->
+                <div class="relative w-full lg:w-[40%]">
+                    
+                    <h1
+                    class="text-[#13111A] font-bold md:max-w-[425px] leading-[2.7rem] text-[36px] md:text-[30px] lg:text-[44px] md:mx-auto lg:mr-auto lg:ml-0 mb-6">
+                    We Are on a mission to helping you invest smartly.
+                    </h1>
+                </div>
+
+                <!-- Text -->
+                <div class="relative w-full lg:w-[60%] sm:ml-3">
+                    <p
+                    class="text-[17px] md:text-[18px] mt-4 font-light max-w-[33rem] md:max-w-[35rem] md:mx-auto lg:mr-auto lg:ml-0 mb-4 opacity-60">
+                    We have a history that dates back to 2009 when bitcoin was created, We laid the groundwork for the world’s first bitcoin trading service. Since then, we have grown from strength to strength, gaining the trust of traders around the world.
+                    </p>
+                </div>
+            </div>
+            <img src="{% static 'assets/aboutVideoThumb.png' %}" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="bg-[#13111a] pt-[20px] md:pt-[40px] pb-[80px] px-[1rem] w-full min-h-[20vh] overflow-hidden mb-10">
+    <div class="container mx-auto">
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-5">
+            <!-- Assessment -->
+            <div class="flex gap-3 items-center justify-center flex-col md:flex-row">
+                <div class="w-[225px] h-[225px] lg:h-[250px] lg:w-[250px] p-[30px] border-white rounded-full border text-white text-center flex justify-center items-center flex-col gap-2">
+                    <h2 class="text-[40px]">
+                        <span>83</span>
+                        <strong class="-ml-2">M+</strong>
+                    </h2>
+                    <div class="">
+                        <p class="font-light">Total tranaction Volume</p>
+                    </div>
+                </div>
+                <div class="w-[225px] h-[225px] lg:h-[250px] lg:w-[250px] p-[30px] border-white rounded-full border -mt-[35px] md:-ml-[35px] md:mt-0 text-white text-center flex justify-center items-center flex-col gap-2">
+                    <h2 class="text-[40px]">
+                        <span>6</span>
+                        <strong class="-ml-2">M</strong>
+                    </h2>
+                    <div class="">
+                        <p class="font-light">Satisfied clients around the world</p>
+                    </div>
+                </div>
+                <div class="w-[225px] h-[225px] lg:h-[250px] lg:w-[250px] p-[30px] border-white rounded-full border -mt-[35px] md:-ml-[35px] md:mt-0 text-white text-center flex justify-center items-center flex-col gap-2">
+                    <h2 class="text-[40px]">
+                        <span>4.9</span>
+                        <strong class="-ml-2">%</strong>
+                    </h2>
+                    <div class="">
+                        <p class="font-light">Our company's success rate</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Text -->
+
+            <div class="text-center md:text-left">
+                <h1
+                class="text-white text-center lg:text-left font-bold leading-[2rem] sm:leading-[3rem] md:leading-[3.2rem] text-[30px] sm:text-[37px] lg:text-[45px] md:mx-auto lg:mr-auto lg:ml-0 mb-6">
+                    Take a look at what we've accomplished
+                </h1>
+                <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-2 justify-center lg:justify-start">
+                    <!-- trustpilot.png -->
+                    <div class="flex justify-center items-center sm:mr-[20px]">
+                        <img src="{% static 'assets/trustpilot.png' %}" alt="">
+                    </div>
+                    
+                    <div class="flex flex-row justify-center items-center gap-2">
+                        <img src="{% static 'assets/star-full.svg' %}" alt="">
+                        <img src="{% static 'assets/star-full.svg' %}" alt="">
+                        <img src="{% static 'assets/star-full.svg' %}" alt="">
+                        <img src="{% static 'assets/star-full.svg' %}" alt="">
+                        <img src="{% static 'assets/star-full.svg' %}" alt="">
+                    </div>
+
+                    <div class="sm:ml-3">
+                        <p class="sm:mx-[2px] font-light text-[15px] text-white opacity-60">4.9/5 Rating</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Team -->
+<section class="pt-[80px] pb-[80px] px-[1rem] w-full min-h-[20vh] overflow-hidden bg-white">
+    <div class="container mx-auto">
+        <!-- Heading Text -->
+        <div class="text-center lg:text-left">
+            <h2 class="text-[#13111A] text-center font-bold text-[36px] md:text-[30px] lg:text-[44px] mb-20">Our Expert Team</h2>
+        </div>
+        <div class="flex flex-wrap gap-3 justify-center">
+
+            <div class="relative overflow-hidden rounded-[15px]">
+                <img class="object-cover  h-full w-full transition-transform duration-[400ms] hover:scale-110" src="{% static 'assets/team1.png' %}" alt="">
+                <div class="bg-white w-[90%] rounded-lg absolute position-in-middle bottom-6 px-3 py-4">
+                    <p class="font-bold md:text-[18px]">Cameron Williamson</p>
+                    <p class="font-light text-[14px]">Vice President</p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-[15px]">
+                <img class="object-cover  h-full w-full transition-transform duration-[400ms] hover:scale-110" src="{% static 'assets/team2.png' %}" alt="">
+                <div class="bg-white w-[90%] rounded-lg absolute position-in-middle bottom-6 px-3 py-4">
+                    <p class="font-bold md:text-[18px]">Leslie Alexander</p>
+                    <p class="font-light text-[14px]">Customer Success Lead</p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-[15px]">
+                <img class="object-cover  h-full w-full transition-transform duration-[400ms] hover:scale-110" src="{% static 'assets/team3.png' %}" alt="">
+                <div class="bg-white w-[90%] rounded-lg absolute position-in-middle bottom-6 px-3 py-4">
+                    <p class="font-bold md:text-[18px]">Susan Howard</p>
+                    <p class="font-light text-[14px]">CVP Planning & Strategy</p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-[15px]">
+                <img class="object-cover  h-full w-full transition-transform duration-[400ms] hover:scale-110" src="{% static 'assets/team4.png' %}" alt="">
+                <div class="bg-white w-[90%] rounded-lg absolute position-in-middle bottom-6 px-3 py-4">
+                    <p class="font-bold md:text-[18px]">Kristin Watson</p>
+                    <p class="font-light text-[14px]">Financial Advisor</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FAQs -->
+<section class="pt-[75px] pb-[40px] px-[1rem] w-full min-h-[20vh] overflow-hidden bg-[#F0E9E1]">
+    <div class="container mx-auto">
+        <div class="w-full">
+            <div class="flex flex-col md:flex-row gap-5">
+    
+                <!-- Heading Text -->
+                <div class="relative w-full lg:w-[60%]">
+                    <img class="absolute top-10 md:-right-[15rem] -z-[1]" src="{% static 'assets/blur2.png' %}" alt="">
+                    <h1
+                        class="text-[#13111A] font-bold leading-[2.35rem] md:leading-[3.7rem] lg:leading-[4.2rem] text-[36px] md:text-[48px] lg:text-[68px] md:mx-auto lg:mr-auto lg:ml-0 mb-6"
+                    >
+                        Frequently asked questions
+                    </h1>
+
+                    <div class="text-[#13111acc] text-[18px] mt-4 font-light mb-20">
+                        Frequently asked questions about our Trading Plarform.
+                    </div>
+
+                    <a class="inline-block text-[16px] font-[500] md:mb-10 underline transition-all duration-500 text-[#13111A] hover:text-yellow-300 absolute bottom-0 left-0" href="/contact">Don't find the answer? Contact us here.</a>
+                </div>
+
+                <div class="w-full lg:w-[40%] flex flex-col">
+                    <div class="">
+                        <h4 class="text-[24px] mb-[15px] font-[700] text-[#13111A]">How do I make Profits ?</h4>
+                        <p class="text-[rgba(19,17,26,.8)] text-[18px] font-[400] ">
+                            ElitecryptoFX provides a variety of advanced tools for both trading and cloud cryptocurrency mining thereby guaranteeing maximum profitability for all your investments.
+                        </p>
+                        <div class="w-full h-[1px] bg-[#13111A] my-[4rem]"></div>
+                    </div>
+
+                    <div class="">
+                        <h4 class="text-[24px] mb-[15px] font-[700] text-[#13111A]">Are my funds Protected ?</h4>
+                        <p class="text-[rgba(19,17,26,.8)] text-[18px] font-[400] ">
+                            Your funds are a priority and we have put I several measure to ensure that all funds are insured and protected, we have also put anti-theft, anti-fraud and anti-money laundry systems in place to ensure the a safe trading & investment platform.
+                        </p>
+                        <div class="w-full h-[1px] bg-[#13111A] my-[4rem]"></div>
+                    </div>
+
+                    <div class="">
+                        <h4 class="text-[24px] mb-[15px] font-[700] text-[#13111A]">How do I deposit?</h4>
+                        <p class="text-[rgba(19,17,26,.8)] text-[18px] font-[400] ">
+                            We offer a variety of deposit options. Please register to see all available methods.
+                        </p>
+                        <div class="w-full h-[1px] bg-[#13111A] my-[4rem]"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Trusted Customers Logos -->
+<section class="pt-[75px] pb-[80px] px-[1rem] bg-[#13111A] w-full min-h-[20vh] overflow-hidden border-[0.2px] border-b-white border-r-transparent border-l-transparent">
+    <h2 class="text-white text-center mb-[3rem] text-[18px] md:text-[20px]">Trusted by 1600+ of the world's most popular companies</h2>
+    <div class="text-center lg:text-left container mx-auto">
+        <div class="flex flex-wrap md:flex-row items-center justify-center gap-20">
+            <img class="opacity-70 hover:opacity-100" src="{% static 'assets/client1.png' %}" alt="">
+            <img class="opacity-70 hover:opacity-100" src="{% static 'assets/client2.png' %}" alt="">
+            <img class="opacity-70 hover:opacity-100" src="{% static 'assets/client3.png' %}" alt="">
+            <img class="opacity-70 hover:opacity-100" src="{% static 'assets/client4.png' %}" alt="">
+            <img class="opacity-70 hover:opacity-100" src="{% static 'assets/client5.png' %}" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+
+{% include 'components/footer.html' %}
+
+
+
+{% endblock content %}

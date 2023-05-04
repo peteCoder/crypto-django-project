@@ -1,0 +1,223 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}
+<title>Crypto | Services</title>
+{% endblock title %}
+
+{% block content %}
+
+{% include 'components/navbar.html' %}
+
+<!-- Here -->
+<section class="py-[10rem] px-[1rem] w-full flex flex-col justify-center items-center overflow-hidden relative bg-[#F0E9E1]">
+    <div class="text-center lg:text-left container mx-auto">
+        <div class="text-center">
+            <h2 class="font-bold text-[2rem] md:text-[5rem]">Services</h2>
+            <div class="flex text-center text-[16px] md:text-[18px] justify-center gap-3  text-[#6c757d]">
+                <a class="" href="/">Home</a>
+                <span class="text-[#6c757d]"> / </span>
+                <p class="font-[600] text-[#13111A]">services</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shapes -->
+    <div class="">
+        <img class="hidden md:block w-[140px] absolute top-40 left-5 animate-bounce animate-duration animate-delay-first" src="{% static 'assets/design-shape1.png' %}" alt="">
+        <img class="hidden md:block w-[150px] absolute bottom-20 right-5 animate-bounce animate-duration animate-delay-second" src="{% static 'assets/design-shape2.png' %}" alt="">
+    </div>
+</section>
+
+
+<section class="py-[5rem] px-[1rem] w-full flex flex-col justify-center items-center overflow-hidden relative bg-white">
+    <!-- about-thumb2.png -->
+    <div class="lg:text-left container mx-auto">
+        <div class="flex flex-col lg:flex-row  gap-[4rem] lg:gap-[2rem] items-center">
+
+            <div class="relative w-full lg:w-[50%]">
+                <h1
+                    class="text-[#13111A] font-bold leading-[2.35rem] md:leading-[3.7rem] lg:leading-[4.2rem] text-[36px] md:text-[30px] lg:text-[44px] md:mx-auto lg:mr-auto lg:ml-0 mb-6">
+                    Trade on Optimal Fx
+                </h1>
+                <p
+                    class="text-[18px] md:text-[19px] mt-4 font-light max-w-[33rem] md:max-w-[35rem] md:mx-0 lg:mr-auto lg:ml-0 mb-4 opacity-60">
+                    Learn about the markets that you can trade online with Optimal Trade Fx, including forex, synthetic indices, stocks & indices, cryptocurrencies, basket indices, and commodities.
+                </p>
+                <p
+                    class="text-[18px] md:text-[19px] mt-4 font-light max-w-[33rem] md:max-w-[35rem] md:mx-0 lg:mr-auto lg:ml-0 mb-4 opacity-60">
+                    CFD trading allows you to trade on the price movement of an asset without buying or owning the underlying asset.Options trading allows for fixed payouts from correctly predicting market movements, without needing to buy an underlying asset. Multipliers allow you to trade on leverage while limiting downside risk to your investment. You can maximise your potential profit by several multiples of any market movement without risking more than your initial investment.
+                </p>
+            </div>
+
+            <div class="relative rounded-2xl space-y-2 lg:space-y-2 w-full lg:w-1/2">
+                <img class="lg;rounded-l-3xl overflow-hidden md:w-full md:h-full md:object-cover" class="" src="{% static 'assets/servicesHeaderImage.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Features -->
+<section class="pt-[75px] pb-[80px] px-[1rem] w-full min-h-[20vh] bg-white overflow-hidden">
+    <div class="container mx-auto">
+        <!-- Heading Text -->
+        <div class="text-center  lg:text-left">
+            <h2 class="text-[#13111A] text-center font-bold text-[36px] md:text-[30px] lg:text-[44px] mb-10">Why choose us?</h2>
+            
+        </div>
+        <!-- Features Items -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+
+            <div
+                class="flex flex-col items-center md:items-start gap-4 md:gap-0 lg:flex-row p-[39px] transition-all duration-[.4s] mb-[24px] hover:bg-[#ffffff] custom-shadow border-[rgba(19,17,26,.1)] border rounded-[10px]">
+                <img class="md:shrink-0 md:mr-[40px] w-[69px] h-[69px]" src="{% static 'assets/icon1.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[24px] mb-[15px] font-[600] text-[rgba(19,17,26,1)]">Industry-leading security</h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        256 bit symmetric world class key encryption for both wallet & tranactions.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center md:items-start gap-4 md:gap-0 lg:flex-row p-[39px] transition-all duration-[.4s] mb-[24px] hover:bg-[#ffffff] custom-shadow border-[rgba(19,17,26,.1)] border rounded-[10px]">
+                <img class="md:shrink-0 md:mr-[40px] w-[69px] h-[69px]" src="{% static 'assets/icon2.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[24px] mb-[15px] font-[600] text-[rgba(19,17,26,1)]">Fast Withdrawals</h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        Choose form a wide range of options to cash out, Withdrawing your profits is as easy as a tap of
+                        a button.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-center md:items-start gap-4 md:gap-0 lg:flex-row p-[39px] transition-all duration-[.4s] mb-[24px] hover:bg-[#ffffff] custom-shadow border-[rgba(19,17,26,.1)] border rounded-[10px]">
+                <img class="md:shrink-0 md:mr-[40px] w-[69px] h-[69px]" src="{% static 'assets/icon3.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[24px] mb-[15px] font-[600] text-[rgba(19,17,26,1)]">Bitcoin Cloud Mining</h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        Let's do the heavy lifting for you, with our high speed cloud minnng guaranteed to providing you
+                        the best ROI.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-center md:items-start gap-4 md:gap-0 lg:flex-row p-[39px] transition-all duration-[.4s] mb-[24px] hover:bg-[#ffffff] custom-shadow border-[rgba(19,17,26,.1)] border rounded-[10px]">
+                <img class="md:shrink-0 md:mr-[40px] w-[69px] h-[69px]" src="{% static 'assets/icon4.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[24px] mb-[15px] font-[600] text-[rgba(19,17,26,1)]">Crime insurance against theft
+                    </h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        Crime insurance protects a company from loss of money, securities, inventory from fraud events.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-center md:items-start gap-4 md:gap-0 lg:flex-row p-[39px] transition-all duration-[.4s] mb-[24px] hover:bg-[#ffffff] custom-shadow border-[rgba(19,17,26,.1)] border rounded-[10px]">
+                <img class="md:shrink-0 md:mr-[40px] w-[69px] h-[69px]" src="{% static 'assets/icon5.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[24px] mb-[15px] font-[600] text-[rgba(19,17,26,1)]">Watch and analyze charts
+                    </h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        Stay Informed with a simple yet intutive and fully customisable dashboard.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-center md:items-start gap-4 md:gap-0 lg:flex-row p-[39px] transition-all duration-[.4s] mb-[24px] hover:bg-[#ffffff] custom-shadow border-[rgba(19,17,26,.1)] border rounded-[10px]">
+                <img class="md:shrink-0 md:mr-[40px] w-[69px] h-[69px]" src="{% static 'assets/icon6.png' %}" alt="">
+                <div class="flex flex-col max-w-[449px]">
+                    <h2 class="text-[24px] mb-[15px] font-[600] text-[rgba(19,17,26,1)]">Invest in real time
+                    </h2>
+                    <p class="mb-[30px] text-[rgba(19,17,26,.8)] text-[18px]">
+                        Invest in cryptocurrencies, forex, stocks and even NFT's in real time with our highly avanced platform
+                    </p>
+                    
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FAQs -->
+<section class="pt-[75px] pb-[40px] px-[1rem] w-full min-h-[20vh] overflow-hidden bg-[#F0E9E1]">
+    <div class="container mx-auto">
+        <div class="w-full">
+            <div class="flex flex-col md:flex-row gap-5">
+    
+                <!-- Heading Text -->
+                <div class="relative w-full lg:w-[60%]">
+                    <img class="absolute top-10 md:-right-[15rem] -z-[1]" src="{% static 'assets/blur2.png' %}" alt="">
+                    <h1
+                        class="text-[#13111A] font-bold leading-[2.35rem] md:leading-[3.7rem] lg:leading-[4.2rem] text-[36px] md:text-[48px] lg:text-[68px] md:mx-auto lg:mr-auto lg:ml-0 mb-6"
+                    >
+                        Frequently asked questions
+                    </h1>
+
+                    <div class="text-[#13111acc] text-[18px] mt-4 font-light mb-20">
+                        Frequently asked questions about our Trading Plarform.
+                    </div>
+
+                    <a class="inline-block text-[16px] font-[500] md:mb-10 underline transition-all duration-500 text-[#13111A] hover:text-yellow-300 absolute bottom-0 left-0" href="/contact">Don't find the answer? Contact us here.</a>
+                </div>
+
+                <div class="w-full lg:w-[40%] flex flex-col">
+                    <div class="">
+                        <h4 class="text-[24px] mb-[15px] font-[700] text-[#13111A]">How do I make Profits ?</h4>
+                        <p class="text-[rgba(19,17,26,.8)] text-[18px] font-[400] ">
+                            ElitecryptoFX provides a variety of advanced tools for both trading and cloud cryptocurrency mining thereby guaranteeing maximum profitability for all your investments.
+                        </p>
+                        <div class="w-full h-[1px] bg-[#13111A] my-[4rem]"></div>
+                    </div>
+
+                    <div class="">
+                        <h4 class="text-[24px] mb-[15px] font-[700] text-[#13111A]">Are my funds Protected ?</h4>
+                        <p class="text-[rgba(19,17,26,.8)] text-[18px] font-[400] ">
+                            Your funds are a priority and we have put I several measure to ensure that all funds are insured and protected, we have also put anti-theft, anti-fraud and anti-money laundry systems in place to ensure the a safe trading & investment platform.
+                        </p>
+                        <div class="w-full h-[1px] bg-[#13111A] my-[4rem]"></div>
+                    </div>
+
+                    <div class="">
+                        <h4 class="text-[24px] mb-[15px] font-[700] text-[#13111A]">How do I deposit?</h4>
+                        <p class="text-[rgba(19,17,26,.8)] text-[18px] font-[400] ">
+                            We offer a variety of deposit options. Please register to see all available methods.
+                        </p>
+                        <div class="w-full h-[1px] bg-[#13111A] my-[4rem]"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+{% include 'components/footer.html' %}
+
+
+
+{% endblock content %}
