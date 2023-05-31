@@ -1,0 +1,137 @@
+/* static/src/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .hamburger {
+        @apply p-[10px] flex flex-col transition-all duration-300;
+    }
+    .line {
+        @apply inline-block w-[35px] h-[2px] bg-black my-[3px] mx-auto transition-all duration-300;
+    }
+    
+}
+
+.text-piggybank, .text-primary, .text-primary-500 {
+    color: #083e9e;
+}
+.bg-primary-700 {
+    background-color: #062863;
+}
+
+.intsAz {
+    background-image: url('./images/bg1.png'), url('./images/bg2.png'), url('./images/bg3.png'), url('./images/bg4.png');
+    background-position: left -1% top -15%, right -7.5% top -1%, left -5% bottom -10%, right -5% bottom -5%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 15%, 15%, 15%, 15%;
+}
+
+
+.biJPjj {
+    background-color: rgb(8, 62, 158);
+}
+
+.bWMhOM {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    
+}
+
+.hshasj{
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    visibility: hidden; 
+    height: 0px; 
+    overflow: scroll; 
+    white-space: pre; 
+    font-size: 16px; 
+    font-weight: 400; 
+    font-style: normal; 
+    letter-spacing: normal; 
+    text-transform: none;
+}
+
+
+.lojjdhjs {
+    box-sizing: content-box; 
+    width: 2px; 
+    background: 0px center; 
+    border: 0px; 
+    font-size: inherit; 
+    opacity: 1; 
+    outline: 0px; 
+    padding: 0px; 
+    color: inherit;
+}
+
+.kshhdj{
+    display: inline-block;
+}
+
+.active .nav-active-a {
+    transform: rotate(45deg);
+    transform-origin: .3rem .5rem;
+}
+
+.active .nav-active-b {
+    transform: rotate(-45deg);
+    transform-origin: .08rem .02rem;
+}
+
+.active .disappear {
+    @apply opacity-0;
+}
+
+.matrix {
+    transform: matrix(1, 0, 0, -1, 0, 5,5);
+    transform-style: preserve-3d;
+}
+
+
+.flex-basis {
+    flex-basis: auto;
+}
+
+
+.shadow-special {
+    padding: 30px 20px;
+    box-shadow: 0 5px 15px rgba(6, 34, 51, 0.15);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    max-width: 100%;
+    background-color: #09314a;
+}
+
+.animate-duration {
+    animation-duration: 2.4s;
+    
+}
+
+.animate-delay-first {
+    animation-delay: 0.5s;
+}
+
+.animate-delay-second {
+    animation-delay: 1s;
+}
+
+
+.position-in-middle {
+    transform: translateX(-50%);
+    left: 50%;
+    
+}
+
+.position-in-middle img {
+    vertical-align: middle
+}
+
+
+.custom-shadow:hover {
+    box-shadow: 0 4px 60px rgba(0,0,0,.06);
+}
