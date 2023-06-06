@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-c6hfi%(aej@i-1=!#2h4ksedv0s*ef627^)8as1nx3mb&wj&e8
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '.vercel.app', 
     'localhost',
+    '127.0.0.1',
     '*',
 ]
 
@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'compressor',
     'rest_framework',
+    'main',
+    'dashboard',
 ]
 
 MIDDLEWARE = [
@@ -80,14 +82,20 @@ TEMPLATES = [
 WSGI_APPLICATION = 'crypto.wsgi.application'
 
 
+# Auth user
+AUTH_USER_MODEL = 'main.User'
+
+
+
+
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 
